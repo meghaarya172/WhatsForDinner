@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="WhatsForDinner.Views.MasterPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" Title="What's for Dinner?">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Button Text="What's for Dinner?" Clicked="Dinner_Clicked"/>
+                    <Button Text="Blacklist" Clicked="Blacklist_Clicked"/>
+                    <Button Text="About" Clicked="About_Clicked"/>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="Placeholder" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

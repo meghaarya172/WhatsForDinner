@@ -1,4 +1,5 @@
 ﻿using System;
+using WhatsForDinner.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace WhatsForDinner
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MasterPage();
         }
 
         protected override void OnStart()
