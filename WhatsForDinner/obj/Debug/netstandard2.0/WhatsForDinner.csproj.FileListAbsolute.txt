@@ -1,0 +1,17 @@
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/bin/Debug/netstandard2.0/WhatsForDinner.deps.json
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/bin/Debug/netstandard2.0/WhatsForDinner.dll
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/bin/Debug/netstandard2.0/ref/WhatsForDinner.dll
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/bin/Debug/netstandard2.0/WhatsForDinner.pdb
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/Views/AboutPage.xaml.g.cs
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/Views/BlacklistPage.xaml.g.cs
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/Views/MapDetailPage.xaml.g.cs
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/Views/MasterPage.xaml.g.cs
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/Views/WhatsForDinnerPage.xaml.g.cs
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/WhatsForDinner.AssemblyInfoInputs.cache
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/WhatsForDinner.AssemblyInfo.cs
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/WhatsForDinner.csproj.CoreCompileInputs.cache
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/WhatsForDinner.dll
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/ref/WhatsForDinner.dll
+/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner/obj/Debug/netstandard2.0/WhatsForDinner.pdb

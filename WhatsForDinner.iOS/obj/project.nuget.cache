@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "myr+aRrz6twk0EHMOU0R63UIcNOrcKTnNRkOXJxCLwGFlrsJgvwZsLEYXPp7zMKD74/QzXSBj9d++WW5lnW3zQ==",
+  "success": true,
+  "projectFilePath": "/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner.iOS/WhatsForDinner.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/michaelfrantzen/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/michaelfrantzen/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/michaelfrantzen/.nuget/packages/xamarin.forms/4.6.0.1141/xamarin.forms.4.6.0.1141.nupkg.sha512",
+    "/Users/michaelfrantzen/.nuget/packages/xamarin.forms.maps/4.8.0.1560/xamarin.forms.maps.4.8.0.1560.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1560 to 4.6.0.1141. Reference the package directly from the project to select a different version. \n WhatsForDinner.iOS -> WhatsForDinner -> Xamarin.Forms (>= 4.8.0.1560) \n WhatsForDinner.iOS -> Xamarin.Forms (>= 4.6.0.1141)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}
