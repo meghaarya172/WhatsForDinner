@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using WhatsForDinner.DataModels;
 using WhatsForDinner.Services;
+using WhatsForDinner.Views;
 using Xamarin.Forms;
 
 namespace WhatsForDinner.ViewModels
@@ -56,10 +57,11 @@ namespace WhatsForDinner.ViewModels
                         //TODO: Get Device's current location
                         var service = new PlacesServices(new PlacesInfo());
                         restaurant = await service.GetRestaurant();
-                        IsBusy = false;
                     }
                 });
-                await Application.Current.MainPage.DisplayAlert("What's for Dinner?", string.Format("You should eat at the \"{0}\"", restaurant.name), "Ok");
+                //await Application.Current.MainPage.DisplayAlert("What's for Dinner?", string.Format("You should eat at the \"{0}\"", restaurant.name), "Ok");
+                await Application.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new MapDetailPage(restaurant)));
+                IsBusy = false;
             }
         }
     }

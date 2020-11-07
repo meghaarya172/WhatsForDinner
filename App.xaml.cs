@@ -1,7 +1,9 @@
 ﻿using System;
+using WhatsForDinner.Services;
 using WhatsForDinner.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using WhatsForDinner.ViewModels;
 
 namespace WhatsForDinner
 {

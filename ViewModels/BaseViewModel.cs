@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using WhatsForDinner.Services;
+
 namespace WhatsForDinner.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
