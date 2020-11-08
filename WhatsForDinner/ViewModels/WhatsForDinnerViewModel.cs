@@ -54,6 +54,7 @@ namespace WhatsForDinner.ViewModels
                     {
                         IsBusy = true;
                         // TODO: Convert range (Miles) into meters
+                        var ToMeters = Math.Round((double)(range) * 1609.34, 2);                        
                         //TODO: Get Device's current location
                         var service = new PlacesServices(new PlacesInfo());
                         restaurant = await service.GetRestaurant();
