@@ -1,9 +1,11 @@
-﻿using System;
+using System;
+using System.Threading;
 using System.Threading.Tasks;
 using WhatsForDinner.DataModels;
 using WhatsForDinner.Services;
 using WhatsForDinner.Views;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace WhatsForDinner.ViewModels
 {
@@ -53,10 +55,44 @@ namespace WhatsForDinner.ViewModels
                     if (range > 0)
                     {
                         IsBusy = true;
-                        // TODO: Convert range (Miles) into meters
-                        var ToMeters = Math.Round((double)(range) * 1609.34, 2);                        
-                        //TODO: Get Device's current location
-                        var service = new PlacesServices(new PlacesInfo());
+                        
+                        PlacesInfo placesInfo = new PlacesInfo();
+
+                        try
+                        {
+                            CancellationTokenSource cts;
+                            var request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(10));
+                            cts = new CancellationTokenSource();
+                            var location = await Geolocation.GetLocationAsync(request, cts.Token);
+
+                            if (location != null)
+                            {
+                                placesInfo.Location.Latitude = location.Latitude;
+                                placesInfo.Location.Longitude = location.Longitude;
+                            }
+                        }
+                        catch (FeatureNotSupportedException fnsEx)
+                        {
+                            // Handle not supported on device exception
+                            //await Application.Current.MainPage.DisplayAlert("Alert", "not supported on device" + fnsEx.Message, "OK");
+                        }
+                        catch (FeatureNotEnabledException fneEx)
+                        {
+                            // Handle not enabled on device exception
+                            //await Application.Current.MainPage.DisplayAlert("Alert", "not enabled on device" + fneEx.Message, "OK");
+                        }
+                        catch (PermissionException pEx)
+                        {
+                            // Handle permission exception
+                            //await Application.Current.MainPage.DisplayAlert("Alert", "permission exception" + pEx.Message, "OK");
+                        }
+                        catch (Exception ex)
+                        {
+                            // Unable to get location
+                            //await Application.Current.MainPage.DisplayAlert("Alert", "unable to get location" + ex.Message, "OK");
+                        }
+                        
+                        var service = new PlacesServices(placesInfo);
                         restaurant = await service.GetRestaurant();
                     }
                 });
