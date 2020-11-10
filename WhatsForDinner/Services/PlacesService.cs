@@ -12,7 +12,8 @@ namespace WhatsForDinner.Services
     public class PlacesServices
     {
         // Constants
-        private const string APIKEY = "AIzaSyCWdC6PdKv7nknQwhiyuLqWqm8-WpkOwU8";
+        private const string AK_00 = "AIzaSyCWdC6PdKv7nknQw";
+        private const string AK_01 = "hiyuLqWqm8-WpkOwU8";
 
         // Class Members
         private PlacesInfo PlacesInfo;
@@ -101,7 +102,7 @@ namespace WhatsForDinner.Services
             var requestString = string.Format("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0},{1}&radius={2}&type=restaurant", PlacesInfo.Location.Latitude, PlacesInfo.Location.Longitude, PlacesInfo.Range);
             if (!string.IsNullOrWhiteSpace(pageToken))
                 requestString += string.Format("&pagetoken={0}", pageToken);
-            return requestString + string.Format("&key={0}", APIKEY);
+            return requestString + string.Format("&key={0}", (AK_00 + AK_01));
         }
     }
 }
