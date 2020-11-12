@@ -24,7 +24,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.1141": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -100,8 +100,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-br"
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -145,10 +145,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.8.0.1560": {
+      "Xamarin.Forms.Maps/4.8.0.1687": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1560"
+          "Xamarin.Forms": "4.8.0.1687"
         },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
@@ -165,8 +165,8 @@
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1560",
-          "Xamarin.Forms.Maps": "4.8.0.1560"
+          "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.Maps": "4.8.0.1687"
         },
         "compile": {
           "bin/placeholder/WhatsForDinner.dll": {}
@@ -199,7 +199,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.1141": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -275,8 +275,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-br"
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -320,10 +320,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.8.0.1560": {
+      "Xamarin.Forms.Maps/4.8.0.1687": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1560"
+          "Xamarin.Forms": "4.8.0.1687"
         },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
@@ -340,8 +340,8 @@
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1560",
-          "Xamarin.Forms.Maps": "4.8.0.1560"
+          "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.Maps": "4.8.0.1687"
         },
         "compile": {
           "bin/placeholder/WhatsForDinner.dll": {}
@@ -374,7 +374,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.1141": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -450,8 +450,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-br"
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -495,10 +495,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.8.0.1560": {
+      "Xamarin.Forms.Maps/4.8.0.1687": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1560"
+          "Xamarin.Forms": "4.8.0.1687"
         },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
@@ -515,8 +515,8 @@
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1560",
-          "Xamarin.Forms.Maps": "4.8.0.1560"
+          "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.Maps": "4.8.0.1687"
         },
         "compile": {
           "bin/placeholder/WhatsForDinner.dll": {}
@@ -549,7 +549,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.6.0.1141": {
+      "Xamarin.Forms/4.8.0.1687": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -625,8 +625,8 @@
           "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pl"
           },
-          "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll": {
-            "locale": "pt-br"
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
           },
           "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
             "locale": "pt"
@@ -670,10 +670,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.8.0.1560": {
+      "Xamarin.Forms.Maps/4.8.0.1687": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.8.0.1560"
+          "Xamarin.Forms": "4.8.0.1687"
         },
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
@@ -690,8 +690,8 @@
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1560",
-          "Xamarin.Forms.Maps": "4.8.0.1560"
+          "Xamarin.Forms": "4.8.0.1687",
+          "Xamarin.Forms.Maps": "4.8.0.1687"
         },
         "compile": {
           "bin/placeholder/WhatsForDinner.dll": {}
@@ -782,13 +782,14 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.6.0.1141": {
-      "sha512": "SltuAt48A9qfC7pEo9zdQ5/IExdLkGttVAtv9bZw4IWA1SBbRpR2xbeduvowW9DQ/PjJD9HM7aSzxt0Spkwrkw==",
+    "Xamarin.Forms/4.8.0.1687": {
+      "sha512": "o9ACAbleXxorZzIHRBzIloPollwVC7+YTfxE8r3L2frArCHUkrHIy+K+azQag/Un4h2u88DS01HqR16/lMD8zQ==",
       "type": "package",
-      "path": "xamarin.forms/4.6.0.1141",
+      "path": "xamarin.forms/4.8.0.1687",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Assets/xamarin_128x128.png",
         "build/MonoAndroid10/proguard.cfg",
         "build/XCODE10/Xamarin.Forms.Platform.iOS.dll",
         "build/XCODE10/Xamarin.Forms.Platform.iOS.pdb",
@@ -868,8 +869,8 @@
         "lib/MonoAndroid10.0/ja/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid10.0/ko/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10.0/ko/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid10.0/pt-br/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid10.0/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid10.0/ru/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10.0/ru/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid10.0/zh-Hans/Xamarin.Forms.Core.xml",
@@ -901,8 +902,8 @@
         "lib/MonoAndroid90/ja/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/ko/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid90/ko/Xamarin.Forms.Xaml.xml",
-        "lib/MonoAndroid90/pt-br/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid90/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/ru/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid90/ru/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/zh-Hans/Xamarin.Forms.Core.xml",
@@ -956,9 +957,9 @@
         "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
-        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Core.xml",
-        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Platform.iOS.resources.dll",
-        "lib/Xamarin.iOS10/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/ru/Xamarin.Forms.Core.xml",
@@ -1007,8 +1008,8 @@
         "lib/netstandard2.0/ja/Xamarin.Forms.Xaml.xml",
         "lib/netstandard2.0/ko/Xamarin.Forms.Core.xml",
         "lib/netstandard2.0/ko/Xamarin.Forms.Xaml.xml",
-        "lib/netstandard2.0/pt-br/Xamarin.Forms.Core.xml",
-        "lib/netstandard2.0/pt-br/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/netstandard2.0/ru/Xamarin.Forms.Core.xml",
         "lib/netstandard2.0/ru/Xamarin.Forms.Xaml.xml",
         "lib/netstandard2.0/zh-Hans/Xamarin.Forms.Core.xml",
@@ -1050,6 +1051,7 @@
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
@@ -1082,6 +1084,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
@@ -1091,14 +1094,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.6.0.1141.nupkg.sha512",
+        "xamarin.forms.4.8.0.1687.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Maps/4.8.0.1560": {
-      "sha512": "rvvbKfeH0+6ezesZq1Fu10Ms8nbUqJBvJ00w7j0NaZh/UpfC3oIRQRUI6A+iY802bTxm80UKZjqnDPGyL5792w==",
+    "Xamarin.Forms.Maps/4.8.0.1687": {
+      "sha512": "V3M5BvKl8ZhNqraT5sp1nSP7qYvxdDtwhUwLgWwLRnV03rhe475hcdCnk0xWeEoFQi05hvRyCQvr/TOGQbgUmg==",
       "type": "package",
-      "path": "xamarin.forms.maps/4.8.0.1560",
+      "path": "xamarin.forms.maps/4.8.0.1687",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1128,7 +1131,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
-        "xamarin.forms.maps.4.8.0.1560.nupkg.sha512",
+        "xamarin.forms.maps.4.8.0.1687.nupkg.sha512",
         "xamarin.forms.maps.nuspec"
       ]
     },
@@ -1142,7 +1145,7 @@
     "Xamarin.iOS,Version=v1.0": [
       "WhatsForDinner >= 1.0.0",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.6.0.1141"
+      "Xamarin.Forms >= 4.8.0.1687"
     ]
   },
   "packageFolders": {
@@ -1186,7 +1189,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.6.0.1141, )"
+            "version": "[4.8.0.1687, )"
           }
         }
       }
@@ -1202,20 +1205,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1560 to 4.6.0.1141. Reference the package directly from the project to select a different version. \n WhatsForDinner.iOS -> WhatsForDinner -> Xamarin.Forms (>= 4.8.0.1560) \n WhatsForDinner.iOS -> Xamarin.Forms (>= 4.6.0.1141)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  }
 }

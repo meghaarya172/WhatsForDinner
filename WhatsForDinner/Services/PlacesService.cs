@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web;
 using Newtonsoft.Json;
 using WhatsForDinner.DataModels;
 
@@ -100,6 +101,13 @@ namespace WhatsForDinner.Services
         private string BuildRequestString(string pageToken = "")
         {
             var requestString = string.Format("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0},{1}&radius={2}&type=restaurant", PlacesInfo.Location.Latitude, PlacesInfo.Location.Longitude, PlacesInfo.Range);
+            
+            if (PlacesInfo.MinPrice.HasValue && (PlacesInfo.MinPrice >= 0 && PlacesInfo.MinPrice <= 4))
+                requestString += string.Format("&minprice={0}", PlacesInfo.MinPrice.Value);
+            if (PlacesInfo.MaxPrice.HasValue && (PlacesInfo.MaxPrice >= 0 && PlacesInfo.MaxPrice <= 4))
+                requestString += string.Format("&maxprice={0}", PlacesInfo.MaxPrice.Value);
+            if (!string.IsNullOrEmpty(PlacesInfo.Keyword))
+                requestString += string.Format("&keyword={0}", HttpUtility.UrlEncode(PlacesInfo.Keyword));
             if (!string.IsNullOrWhiteSpace(pageToken))
                 requestString += string.Format("&pagetoken={0}", pageToken);
             return requestString + string.Format("&key={0}", (AK_00 + AK_01));

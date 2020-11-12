@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d4z8DRMuukBHVnil164icswExhvbNBFm3G4SVmmt0kirURLe6F3my0aVBlD6jh0fg4bYmgiLx6vPzqHabcOicQ==",
+  "dgSpecHash": "T03zzeBY/BAkQ4qkAr6CT+JgfdLTAILbdbl8p+O9V0QpJx5cDcglax2UzKMS6BrE/uS2RxncCxIbv6d89oatvw==",
   "success": true,
   "projectFilePath": "/Users/michaelfrantzen/Desktop/WhatsForDinner/WhatsForDinner/WhatsForDinner.Android/WhatsForDinner.Android.csproj",
   "expectedPackageFiles": [
@@ -44,8 +44,8 @@
     "/Users/michaelfrantzen/.nuget/packages/xamarin.android.support.viewpager/28.0.0.3/xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "/Users/michaelfrantzen/.nuget/packages/xamarin.build.download/0.4.11/xamarin.build.download.0.4.11.nupkg.sha512",
     "/Users/michaelfrantzen/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "/Users/michaelfrantzen/.nuget/packages/xamarin.forms/4.8.0.1560/xamarin.forms.4.8.0.1560.nupkg.sha512",
-    "/Users/michaelfrantzen/.nuget/packages/xamarin.forms.maps/4.8.0.1560/xamarin.forms.maps.4.8.0.1560.nupkg.sha512",
+    "/Users/michaelfrantzen/.nuget/packages/xamarin.forms/4.8.0.1687/xamarin.forms.4.8.0.1687.nupkg.sha512",
+    "/Users/michaelfrantzen/.nuget/packages/xamarin.forms.maps/4.8.0.1687/xamarin.forms.maps.4.8.0.1687.nupkg.sha512",
     "/Users/michaelfrantzen/.nuget/packages/xamarin.googleplayservices.base/71.1610.0/xamarin.googleplayservices.base.71.1610.0.nupkg.sha512",
     "/Users/michaelfrantzen/.nuget/packages/xamarin.googleplayservices.basement/71.1620.0/xamarin.googleplayservices.basement.71.1620.0.nupkg.sha512",
     "/Users/michaelfrantzen/.nuget/packages/xamarin.googleplayservices.maps/71.1610.0/xamarin.googleplayservices.maps.71.1610.0.nupkg.sha512",
