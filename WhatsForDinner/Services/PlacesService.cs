@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading;
@@ -47,8 +48,30 @@ namespace WhatsForDinner.Services
             // Get random index and return
             var generator = new Random();
             var index = generator.Next(Results.Count);
-            return Results[index];
+            var selectedRestaurant = Results[index];
+            SaveHistory(selectedRestaurant);
+
+            return selectedRestaurant; ;
         }
+
+        private async void SaveHistory(Result restaurant)
+        {
+            try
+            {
+                var id = await App.Database.SaveHistory(new RestaurantHistory
+                {
+                    Name = restaurant.name,
+                    PlaceId = restaurant.place_id,
+                    Address = restaurant.vicinity,
+                    DateTime = DateTime.Now
+                });
+            }
+            catch (Exception ex)
+            {
+                Debugger.Break();
+            }
+        }
+
         private async void GetNearbyPlaces()
         {
             try

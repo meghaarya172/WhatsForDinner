@@ -7,8 +7,9 @@
     <MasterDetailPage.Master>
         <ContentPage Padding="10" Title="What's for Dinner?">
             <ContentPage.Content>
-                <StackLayout>
+                <StackLayout Margin="5,30,5,5">
                     <Button Text="What's for Dinner?" Clicked="Dinner_Clicked"/>
+                    <Button Text="History" Clicked="History_Clicked" />
                     <Button Text="Blacklist" Clicked="Blacklist_Clicked"/>
                     <Button Text="About" Clicked="About_Clicked"/>
                 </StackLayout>
