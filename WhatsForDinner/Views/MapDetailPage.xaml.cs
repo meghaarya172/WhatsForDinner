@@ -19,7 +19,7 @@ namespace WhatsForDinner.Views
 
             map.MoveToRegion(MapSpan.FromCenterAndRadius(
                 new Position(ViewModel.Restaurant.geometry.location.lat,
-                    ViewModel.Restaurant.geometry.location.lng), Distance.FromMiles(.5)));
+                    ViewModel.Restaurant.geometry.location.lng), Distance.FromMiles(.1)));
 
             map.Pins.Add(new Pin
             {

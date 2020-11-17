@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web;
 using Newtonsoft.Json;
 using WhatsForDinner.DataModels;
 
@@ -12,7 +14,8 @@ namespace WhatsForDinner.Services
     public class PlacesServices
     {
         // Constants
-        private const string APIKEY = "AIzaSyCWdC6PdKv7nknQwhiyuLqWqm8-WpkOwU8";
+        private const string AK_00 = "AIzaSyCWdC6PdKv7nknQw";
+        private const string AK_01 = "hiyuLqWqm8-WpkOwU8";
 
         // Class Members
         private PlacesInfo PlacesInfo;
@@ -45,8 +48,30 @@ namespace WhatsForDinner.Services
             // Get random index and return
             var generator = new Random();
             var index = generator.Next(Results.Count);
-            return Results[index];
+            var selectedRestaurant = Results[index];
+            SaveHistory(selectedRestaurant);
+
+            return selectedRestaurant; ;
         }
+
+        private async void SaveHistory(Result restaurant)
+        {
+            try
+            {
+                var id = await App.Database.SaveHistory(new RestaurantHistory
+                {
+                    Name = restaurant.name,
+                    PlaceId = restaurant.place_id,
+                    Address = restaurant.vicinity,
+                    DateTime = DateTime.Now
+                });
+            }
+            catch (Exception ex)
+            {
+                Debugger.Break();
+            }
+        }
+
         private async void GetNearbyPlaces()
         {
             try
@@ -99,9 +124,16 @@ namespace WhatsForDinner.Services
         private string BuildRequestString(string pageToken = "")
         {
             var requestString = string.Format("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0},{1}&radius={2}&type=restaurant", PlacesInfo.Location.Latitude, PlacesInfo.Location.Longitude, PlacesInfo.Range);
+            
+            if (PlacesInfo.MinPrice.HasValue && (PlacesInfo.MinPrice >= 0 && PlacesInfo.MinPrice <= 4))
+                requestString += string.Format("&minprice={0}", PlacesInfo.MinPrice.Value);
+            if (PlacesInfo.MaxPrice.HasValue && (PlacesInfo.MaxPrice >= 0 && PlacesInfo.MaxPrice <= 4))
+                requestString += string.Format("&maxprice={0}", PlacesInfo.MaxPrice.Value);
+            if (!string.IsNullOrEmpty(PlacesInfo.Keyword))
+                requestString += string.Format("&keyword={0}", HttpUtility.UrlEncode(PlacesInfo.Keyword));
             if (!string.IsNullOrWhiteSpace(pageToken))
                 requestString += string.Format("&pagetoken={0}", pageToken);
-            return requestString + string.Format("&key={0}", APIKEY);
+            return requestString + string.Format("&key={0}", (AK_00 + AK_01));
         }
     }
 }

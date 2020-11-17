@@ -1,28 +1,61 @@
-﻿<Properties StartupConfiguration="{35A25CAA-B6D9-4F17-8D91-0C2A669C67AE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WhatsForDinner/WhatsForDinner.csproj">
+﻿<Properties StartupConfiguration="{D47C393D-89EB-49AB-BB69-7A29D859E043}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WhatsForDinner/Views/MapDetailPage.xaml.cs">
     <Files>
-      <File FileName="WhatsForDinner/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="WhatsForDinner/ViewModels/MapDetailViewModel.cs" Line="1" Column="1" />
-      <File FileName="WhatsForDinner/WhatsForDinner.csproj" Line="1" Column="1" />
+      <File FileName="WhatsForDinner/Views/WhatsForDinnerPage.xaml" Line="2" Column="11" />
+      <File FileName="WhatsForDinner/Services/PlacesService.cs" Line="68" Column="1" />
+      <File FileName="WhatsForDinner/DataModels/PlacesInfo.cs" Line="14" Column="40" />
+      <File FileName="WhatsForDinner/ViewModels/MapDetailViewModel.cs" />
+      <File FileName="WhatsForDinner/Views/MapDetailPage.xaml" Line="7" Column="37" />
+      <File FileName="WhatsForDinner/ViewModels/WhatsForDinnerViewModel.cs" Line="79" Column="109" />
+      <File FileName="WhatsForDinner.Android/MainActivity.cs" />
+      <File FileName="WhatsForDinner.Android/Properties/AndroidManifest.xml" />
+      <File FileName="WhatsForDinner.Android/Properties/AssemblyInfo.cs" />
+      <File FileName="WhatsForDinner.iOS/Info.plist" />
+      <File FileName="WhatsForDinner/Views/MapDetailPage.xaml.cs" Line="14" Column="16" />
+      <File FileName="WhatsForDinner/DataModels/ApiModels.cs" Line="1" Column="1" />
+      <File FileName="WhatsForDinner/DataModels/RestaurantHistory.cs" Line="9" Column="27" />
+      <File FileName="WhatsForDinner/Data/RestaurantDatabase.cs" Line="21" Column="105" />
+      <File FileName="WhatsForDinner/App.xaml.cs" Line="24" Column="33" />
+      <File FileName="WhatsForDinner/Views/MasterPage.xaml" Line="10" Column="46" />
+      <File FileName="WhatsForDinner/Views/MasterPage.xaml.cs" Line="37" Column="33" />
+      <File FileName="WhatsForDinner/Views/BlacklistPage.xaml" Line="1" Column="1" />
+      <File FileName="WhatsForDinner/Views/HistoryPage.xaml" Line="2" Column="157" />
+      <File FileName="WhatsForDinner/Views/HistoryPage.xaml.cs" Line="14" Column="37" />
+      <File FileName="WhatsForDinner/ViewModels/HistoryViewModel.cs" Line="27" Column="60" />
+      <File FileName="WhatsForDinner.iOS/Resources/LaunchScreen.storyboard" />
+      <File FileName="WhatsForDinner/Views/WhatsForDinnerPage.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WhatsForDinner" expanded="True">
             <Node name="WhatsForDinner" expanded="True">
-              <Node name="ViewModels" expanded="True">
-                <Node name="MapDetailViewModel.cs" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="DataModels" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="HistoryPage.xaml" expanded="True" />
+                <Node name="MapDetailPage.xaml" expanded="True">
+                  <Node name="MapDetailPage.xaml.cs" selected="True" />
+                </Node>
+                <Node name="MasterPage.xaml" expanded="True" />
+                <Node name="WhatsForDinnerPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="WhatsForDinner.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WhatsForDinner.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.22CD4174-1B54-4BF8-B074-27E31AFBB4B7" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.WhatsForDinner.Android PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.WhatsForDinner.Android TriggeredFromHotReload="False" PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
