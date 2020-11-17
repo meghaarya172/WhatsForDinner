@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="WhatsForDinner.Views.WhatsForDinnerPage"
@@ -18,6 +18,26 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
+
+            <Entry WidthRequest="500" Placeholder="Enter a Keyword" Text="{Binding KeywordText}" />
+            <Picker Title="Select a Min Price Range" SelectedIndex="{Binding MinPriceIndex}">
+                <Picker.Items>
+                    <x:String>$</x:String>
+                    <x:String>$$</x:String>
+                    <x:String>$$$</x:String>
+                    <x:String>$$$$</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker Title="Select a Max Price Range" SelectedIndex="{Binding MaxPriceIndex}">
+                <Picker.Items>
+                    <x:String>$</x:String>
+                    <x:String>$$</x:String>
+                    <x:String>$$$</x:String>
+                    <x:String>$$$$</x:String>
+                </Picker.Items>
+            </Picker>
+
             <Button Text="Pick Restaurant" Command="{Binding RestaurantCommand}"/>
             <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
         </StackLayout>
