@@ -7,6 +7,7 @@ using WhatsForDinner.Views;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace WhatsForDinner.ViewModels
 {
@@ -36,10 +37,50 @@ namespace WhatsForDinner.ViewModels
             }
         }
 
+        // trying to mimic google min/max price scale $=1-10, $$=11-20, $$$=21-30, $$$$=31-500
+        private readonly int[] MinPriceRanges = { 1, 11, 21, 31 };
+        private readonly int[] MaxPriceRanges = { 10, 20, 30, 500 };
+
+        int _maxPriceIndex;
+        public int MaxPriceIndex
+        {
+            get => _maxPriceIndex;
+            set
+            {
+                _maxPriceIndex = value;
+                OnPropertyChanged();
+            }
+        }
+
+        int _minPriceIndex;
+        public int MinPriceIndex
+        {
+            get => _minPriceIndex;
+            set
+            {
+                _minPriceIndex = value;
+                OnPropertyChanged();
+            }
+        }
+
+        string _keywordText;
+        public string KeywordText
+        {
+            get => _keywordText;
+            set
+            {
+                _keywordText = value;
+                OnPropertyChanged();
+            }
+        }
+        public const string KeywordBlank = "blank";
+
         // Constructors
         public WhatsForDinnerViewModel()
         {
             RangeIndex = -1;
+            MinPriceIndex = -1;
+            MaxPriceIndex = -1;
         }
 
         // Command
@@ -52,6 +93,10 @@ namespace WhatsForDinner.ViewModels
                 IsBusy = true;
                 var range = Ranges[RangeIndex];
                 Result restaurant = null;
+
+                var minPrice = MinPriceRanges[MinPriceIndex];
+                var maxPrice = MaxPriceRanges[MaxPriceIndex];
+                string keyword = KeywordText ?? KeywordBlank;
 
                 var location = await GetLocation();
 
@@ -69,6 +114,9 @@ namespace WhatsForDinner.ViewModels
                         {
                             placesInfo.Location.Latitude = location.Latitude;
                             placesInfo.Location.Longitude = location.Longitude;
+                            placesInfo.MinPrice = minPrice;
+                            placesInfo.MaxPrice = maxPrice;
+                            placesInfo.Keyword = keyword;
                         }
 
                         var service = new PlacesServices(placesInfo);
