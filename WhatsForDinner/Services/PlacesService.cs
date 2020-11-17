@@ -66,7 +66,7 @@ namespace WhatsForDinner.Services
                     DateTime = DateTime.Now
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Debugger.Break();
             }

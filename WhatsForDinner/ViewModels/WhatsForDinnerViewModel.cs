@@ -37,9 +37,7 @@ namespace WhatsForDinner.ViewModels
             }
         }
 
-        // trying to mimic google min/max price scale $=1-10, $$=11-20, $$$=21-30, $$$$=31-500
-        private readonly int[] MinPriceRanges = { 1, 11, 21, 31 };
-        private readonly int[] MaxPriceRanges = { 10, 20, 30, 500 };
+        private readonly string[] PriceRanges = { "$", "$$", "$$$", "$$$$" };
 
         int _maxPriceIndex;
         public int MaxPriceIndex
@@ -73,7 +71,6 @@ namespace WhatsForDinner.ViewModels
                 OnPropertyChanged();
             }
         }
-        public const string KeywordBlank = "blank";
 
         // Constructors
         public WhatsForDinnerViewModel()
@@ -91,41 +88,46 @@ namespace WhatsForDinner.ViewModels
             if (!IsBusy)
             {
                 IsBusy = true;
-                var range = Ranges[RangeIndex];
                 Result restaurant = null;
-
-                var minPrice = MinPriceRanges[MinPriceIndex];
-                var maxPrice = MaxPriceRanges[MaxPriceIndex];
-                string keyword = KeywordText ?? KeywordBlank;
-
-                var location = await GetLocation();
-
-                await Task.Run(async () =>
+                if (RangeIndex > -1)
                 {
-                    if (range > 0)
+                    var range = Ranges[RangeIndex];
+
+                    var location = await GetLocation();
+
+                    await Task.Run(async () =>
                     {
-                        var toMeters = (int)Math.Round((double)(range) * 1609.34);
-                        PlacesInfo placesInfo = new PlacesInfo
+                        if (range > 0)
                         {
-                            Range = toMeters
-                        };
+                            var toMeters = (int)Math.Round((double)(range) * 1609.34);
+                            PlacesInfo placesInfo = new PlacesInfo
+                            {
+                                Range = toMeters
+                            };
 
-                        if (location != null)
-                        {
-                            placesInfo.Location.Latitude = location.Latitude;
-                            placesInfo.Location.Longitude = location.Longitude;
-                            placesInfo.MinPrice = minPrice;
-                            placesInfo.MaxPrice = maxPrice;
-                            placesInfo.Keyword = keyword;
+                            if (location != null)
+                            {
+                                placesInfo.Location.Latitude = location.Latitude;
+                                placesInfo.Location.Longitude = location.Longitude;
+                            }
+
+                            if (!string.IsNullOrEmpty(KeywordText))
+                                placesInfo.Keyword = KeywordText;
+
+                            if (MinPriceIndex > -1)
+                                placesInfo.MinPrice = PriceRanges[MinPriceIndex].Length;
+
+                            if (MaxPriceIndex > -1)
+                                placesInfo.MaxPrice = PriceRanges[MaxPriceIndex].Length;
+
+                            var service = new PlacesServices(placesInfo);
+                            restaurant = await service.GetRestaurant();
                         }
+                    });
 
-                        var service = new PlacesServices(placesInfo);
-                        restaurant = await service.GetRestaurant();
-                    }
-                });
-                //await Application.Current.MainPage.DisplayAlert("What's for Dinner?", string.Format("You should eat at the \"{0}\"", restaurant.name), "Ok");
-                await Application.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new MapDetailPage(restaurant)));
-                IsBusy = false;
+                    await Application.Current.MainPage.Navigation.PushModalAsync(new NavigationPage(new MapDetailPage(restaurant)));
+                    IsBusy = false;
+                }
             }
         }
 
@@ -143,25 +145,25 @@ namespace WhatsForDinner.ViewModels
                     return location;
                 }
             }
-            catch (FeatureNotSupportedException fnsEx)
+            catch (FeatureNotSupportedException)
             {
                 Debugger.Break();
                 // Handle not supported on device exception
                 //await Application.Current.MainPage.DisplayAlert("Alert", "not supported on device" + fnsEx.Message, "OK");
             }
-            catch (FeatureNotEnabledException fneEx)
+            catch (FeatureNotEnabledException)
             {
                 Debugger.Break();
                 // Handle not enabled on device exception
                 //await Application.Current.MainPage.DisplayAlert("Alert", "not enabled on device" + fneEx.Message, "OK");
             }
-            catch (PermissionException pEx)
+            catch (PermissionException)
             {
                 Debugger.Break();
                 // Handle permission exception
                 //await Application.Current.MainPage.DisplayAlert("Alert", "permission exception" + pEx.Message, "OK");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Debugger.Break();
                 // Unable to get location
