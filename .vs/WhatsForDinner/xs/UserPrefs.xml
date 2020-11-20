@@ -2,26 +2,26 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="WhatsForDinner/ViewModels/WhatsForDinnerViewModel.cs">
     <Files>
       <File FileName="WhatsForDinner/Views/WhatsForDinnerPage.xaml" Line="2" Column="11" />
-      <File FileName="WhatsForDinner/Services/PlacesService.cs" Line="69" Column="29" />
-      <File FileName="WhatsForDinner/DataModels/PlacesInfo.cs" Line="14" Column="40" />
-      <File FileName="WhatsForDinner/ViewModels/MapDetailViewModel.cs" Line="1" Column="1" />
+      <File FileName="WhatsForDinner/Services/PlacesService.cs" />
+      <File FileName="WhatsForDinner/DataModels/PlacesInfo.cs" />
+      <File FileName="WhatsForDinner/ViewModels/MapDetailViewModel.cs" />
       <File FileName="WhatsForDinner/Views/MapDetailPage.xaml" />
-      <File FileName="WhatsForDinner/ViewModels/WhatsForDinnerViewModel.cs" Line="145" Column="48" />
+      <File FileName="WhatsForDinner/ViewModels/WhatsForDinnerViewModel.cs" Line="131" Column="14" />
       <File FileName="WhatsForDinner.Android/MainActivity.cs" />
       <File FileName="WhatsForDinner.Android/Properties/AndroidManifest.xml" />
       <File FileName="WhatsForDinner.Android/Properties/AssemblyInfo.cs" />
       <File FileName="WhatsForDinner.iOS/Info.plist" />
-      <File FileName="WhatsForDinner/Views/MapDetailPage.xaml.cs" Line="18" Column="56" />
+      <File FileName="WhatsForDinner/Views/MapDetailPage.xaml.cs" />
       <File FileName="WhatsForDinner/DataModels/ApiModels.cs" />
-      <File FileName="WhatsForDinner/DataModels/RestaurantHistory.cs" Line="18" Column="43" />
+      <File FileName="WhatsForDinner/DataModels/RestaurantHistory.cs" />
       <File FileName="WhatsForDinner/Data/RestaurantDatabase.cs" />
       <File FileName="WhatsForDinner/App.xaml.cs" />
       <File FileName="WhatsForDinner/Views/MasterPage.xaml" />
       <File FileName="WhatsForDinner/Views/MasterPage.xaml.cs" />
       <File FileName="WhatsForDinner/Views/BlacklistPage.xaml" />
-      <File FileName="WhatsForDinner/Views/HistoryPage.xaml" Line="13" Column="49" />
-      <File FileName="WhatsForDinner/Views/HistoryPage.xaml.cs" Line="14" Column="37" />
-      <File FileName="WhatsForDinner/ViewModels/HistoryViewModel.cs" Line="34" Column="63" />
+      <File FileName="WhatsForDinner/Views/HistoryPage.xaml" />
+      <File FileName="WhatsForDinner/Views/HistoryPage.xaml.cs" />
+      <File FileName="WhatsForDinner/ViewModels/HistoryViewModel.cs" />
       <File FileName="WhatsForDinner.iOS/Resources/LaunchScreen.storyboard" />
       <File FileName="WhatsForDinner/Views/WhatsForDinnerPage.xaml.cs" />
     </Files>
